@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body>
+	
+
+	<div id="skippedToContent">
+
+		<section role="main" class="main-container container page-status">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>Status</h1>
+	
+	
+					<div class="status-general status-up">
+						<p>
+							<b> <i class="ms-Icon ms-Icon--CheckMark" aria-hidden="true"></i>
+								<span class="text-span">All systems are operational.</span>
+							</b> <span class="text-span last-checked">Last checked <span
+								data-datetime="2018-10-02T03:48:05.5019589Z"
+								title="2018-10-02T03:48:05Z">a few seconds ago</span>.
+							</span>
+						</p>
+					</div>
+	
+	
+	
+					<p>
+						We are continuously monitoring the status of <a
+							href="http://www.nuget.org">NuGet.org</a> and its related
+						services. We post a note on this site if we experience any
+						interruptions in service. If you are having problems connecting to
+						NuGet and do not see a notice posted, please email <a
+							href="mailto:support@nuget.org">support@nuget.org</a> or reach out
+						to us on Twitter <a href="http://twitter.com/nuget">(@nuget)</a>.
+					</p>
+	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+	
+	
+	
+	
+	
+					<h2>Services Status</h2>
+					<p class="sr-only" id="service-status-table-caption">The status
+						of NuGet services.</p>
+					<table class="table borderless"
+						aria-describedby="service-status-table-caption">
+						<thead>
+							<tr class="headings">
+								<th scope="col">Name</th>
+								<th scope="col">Description</th>
+								<th scope="col">Status</th>
+							</tr>
+						</thead>
+						<tbody class="aggregate             status-up
+	">
+							<tr>
+								<td><a class="collapsed" href="#" role="button"
+									data-toggle="collapse" data-target="#NuGet_NuGet_org"
+									aria-expanded="false" aria-controls="NuGet_NuGet_org"
+									id="show-NuGet_NuGet_org"> <i
+										class="ms-Icon ms-Icon--ChevronRight" aria-hidden="true"></i> <span>NuGet.org</span>
+								</a></td>
+								<td>Browsing the Gallery website</td>
+								<td><i class="ms-Icon ms-Icon--CheckMark"></i><span>Operational</span>
+	
+								</td>
+							</tr>
+						</tbody>
+						<tbody class="panel panel-default panel-collapse collapse "
+							aria-expanded="false" id="NuGet_NuGet_org">
+							<tr>
+								<td>North Central US</td>
+								<td>Primary region</td>
+								<td><i class="ms-Icon ms-Icon--CheckMark"></i><span>Operational</span>
+	
+								</td>
+							</tr>
+							<tr>
+								<td>South Central US</td>
+								<td>Backup region</td>
+								<td><i class="ms-Icon ms-Icon--CheckMark"></i><span>Operational</span>
+	
+								</td>
+							</tr>
+						</tbody>
+						<tbody class="aggregate             status-up
+	">
+							<tr>
+								<td><a class="collapsed" href="#" role="button"
+									data-toggle="collapse" data-target="#NuGet_Restore"
+									aria-expanded="false" aria-controls="NuGet_Restore"
+									id="show-NuGet_Restore"> <i
+										class="ms-Icon ms-Icon--ChevronRight" aria-hidden="true"></i> <span>Restore</span>
+								</a></td>
+								<td>Downloading and installing packages from NuGet</td>
+								<td><i class="ms-Icon ms-Icon--CheckMark"></i><span>Operational</span>
+	
+								</td>
+							</tr>
+						</tbody>
+						<tbody class="panel panel-default panel-collapse collapse "
+							aria-expanded="false" id="NuGet_Restore">
+							<tr>
+								<td>V3 Protocol</td>
+								<td>Restore using the V3 API</td>
+								<td><i class="ms-Icon ms-Icon--CheckMark"></i><span>Operational</span>
+	
+								</td>
+							</tr>
+							<tr>
+								<td><span class="nonaggregate"> Global </span></td>
+								<td>V3 restore for users outside of China</td>
+								<td><i class="ms-Icon ms-Icon--CheckMark"></i><span>Operational</span>
+	
+								</td>
+							</tr>
+							<tr>
+								<td><span class="nonaggregate"> China </span></td>
+								<td>V3 restore for users inside China</td>
+								<td><i class="ms-Icon ms-Icon--CheckMark"></i><span>Operational</span>
+	
+								</td>
+							</tr>
+							<tr>
+								<td>V2 Protocol</td>
+								<td>Restore using the V2 API</td>
+								<td><i class="ms-Icon ms-Icon--CheckMark"></i><span>Operational</span>
+	
+								</td>
+							</tr>
+							<tr>
+								<td><span class="nonaggregate"> North Central US </span></td>
+								<td>Primary region</td>
+								<td><i class="ms-Icon ms-Icon--CheckMark"></i><span>Operational</span>
+	
+								</td>
+							</tr>
+							<tr>
+								<td><span class="nonaggregate"> South Central US </span></td>
+								<td>Backup region</td>
+								<td><i class="ms-Icon ms-Icon--CheckMark"></i><span>Operational</span>
+	
+								</td>
+							</tr>
+						</tbody>
+						<tbody class="aggregate             status-up
+	">
+							<tr>
+								<td><a class="collapsed" href="#" role="button"
+									data-toggle="collapse" data-target="#NuGet_Search"
+									aria-expanded="false" aria-controls="NuGet_Search"
+									id="show-NuGet_Search"> <i
+										class="ms-Icon ms-Icon--ChevronRight" aria-hidden="true"></i> <span>Search</span>
+								</a></td>
+								<td>Searching for new and existing packages in Visual Studio
+									or the Gallery website</td>
+								<td><i class="ms-Icon ms-Icon--CheckMark"></i><span>Operational</span>
+	
+								</td>
+							</tr>
+						</tbody>
+						<tbody class="panel panel-default panel-collapse collapse "
+							aria-expanded="false" id="NuGet_Search">
+							<tr>
+								<td>Global</td>
+								<td>Search for packages outside China</td>
+								<td><i class="ms-Icon ms-Icon--CheckMark"></i><span>Operational</span>
+	
+								</td>
+							</tr>
+							<tr>
+								<td><span class="nonaggregate"> North Central US </span></td>
+								<td>Primary region</td>
+								<td><i class="ms-Icon ms-Icon--CheckMark"></i><span>Operational</span>
+	
+								</td>
+							</tr>
+							<tr>
+								<td><span class="nonaggregate"> South Central US </span></td>
+								<td>Backup region</td>
+								<td><i class="ms-Icon ms-Icon--CheckMark"></i><span>Operational</span>
+	
+								</td>
+							</tr>
+							<tr>
+								<td>China</td>
+								<td>Search for packages inside China</td>
+								<td><i class="ms-Icon ms-Icon--CheckMark"></i><span>Operational</span>
+	
+								</td>
+							</tr>
+							<tr>
+								<td><span class="nonaggregate"> East Asia </span></td>
+								<td>Primary region</td>
+								<td><i class="ms-Icon ms-Icon--CheckMark"></i><span>Operational</span>
+	
+								</td>
+							</tr>
+							<tr>
+								<td><span class="nonaggregate"> Southeast Asia </span></td>
+								<td>Backup region</td>
+								<td><i class="ms-Icon ms-Icon--CheckMark"></i><span>Operational</span>
+	
+								</td>
+							</tr>
+						</tbody>
+						<tbody class="aggregate             status-up
+	">
+							<tr>
+								<td>Package Publishing</td>
+								<td>Uploading new packages to NuGet.org</td>
+								<td><i class="ms-Icon ms-Icon--CheckMark"></i><span>Operational</span>
+	
+								</td>
+							</tr>
+						</tbody>
+					</table>
+	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>CDN Status</h2>
+	
+					<p>If you experience connectivity issues but all other
+						indicators on this status page look normal, there may be an issue
+						with our Content Delivery Network (CDN).</p>
+					<p>
+						<a href="http://status.verizondigitalmedia.com/#network-status"
+							target="_blank">Verify CDN network status.</a>
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>History</h2>
+					<h3>
+						<time datetime="2018-09-27 00:00:00Z" data-format="LL">September
+							27, 2018</time>
+					</h3>
+					<div class="row update">
+						<div class="col-xs-1">
+							<time datetime="2018-09-27 12:20:10Z" data-format="HH:mm">12:20</time>
+						</div>
+						<div class="col-xs-11">
+							<p>
+								<strong>NuGet.org is degraded.</strong> You may encounter issues
+								browsing the NuGet Gallery.
+							</p>
+	
+						</div>
+					</div>
+					<div class="row update">
+						<div class="col-xs-1">
+							<time datetime="2018-09-27 12:47:09Z" data-format="HH:mm">12:47</time>
+						</div>
+						<div class="col-xs-11">
+							<p>
+								<strong>NuGet.org is no longer degraded.</strong> You should no
+								longer encounter any issues browsing the NuGet Gallery. Thank you
+								for your patience.
+							</p>
+	
+						</div>
+					</div>
+					<div class="row update">
+						<div class="col-xs-1">
+							<time datetime="2018-09-27 14:32:37Z" data-format="HH:mm">14:32</time>
+						</div>
+						<div class="col-xs-11">
+							<p>
+								<strong>Package Publishing is degraded.</strong> You may
+								encounter issues uploading new packages.
+							</p>
+	
+						</div>
+					</div>
+					<div class="row update">
+						<div class="col-xs-1">
+							<time datetime="2018-09-27 16:58:45Z" data-format="HH:mm">16:58</time>
+						</div>
+						<div class="col-xs-11">
+							<p>
+								<strong>NuGet.org is degraded.</strong> You may encounter issues
+								interacting with nuget.org, restoring using the V2 feed, or
+								pushing new packages. Requests are intermittently failing with <em>HTTP
+									503 Service Unavailable</em>. We are currently investigating the root
+								cause. As a workaround, please use the V3 package source URL: <a
+									href="https://api.nuget.org/v3/index.json">https://api.nuget.org/v3/index.json</a>.
+							</p>
+	
+						</div>
+					</div>
+					<div class="row update">
+						<div class="col-xs-1">
+							<time datetime="2018-09-27 18:24:32Z" data-format="HH:mm">18:24</time>
+						</div>
+						<div class="col-xs-11">
+							<p>
+								<strong>Package Publishing is no longer degraded.</strong> You
+								should no longer encounter any issues uploading new packages.
+								Thank you for your patience.
+							</p>
+	
+						</div>
+					</div>
+					<div class="row update">
+						<div class="col-xs-1">
+							<time datetime="2018-09-27 18:25:12Z" data-format="HH:mm">18:25</time>
+						</div>
+						<div class="col-xs-11">
+							<p>
+								<strong>NuGet.org is no longer degraded.</strong> We have
+								mitigate the HTTP 503 errors. Browsing of nuget.org, V2
+								operations, and pushing of packages should now work as expected.
+							</p>
+	
+						</div>
+					</div>
+	
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<script href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
